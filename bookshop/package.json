@@ -20,7 +20,7 @@
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "method-override": "^2.3.9",
-    "mongoose": "^4.13.20",
+    "mongoose": "^5.7.5",
     "morgan": "^1.8.2",
     "passport": "^0.4.1",
     "passport-facebook": "^2.1.1",
