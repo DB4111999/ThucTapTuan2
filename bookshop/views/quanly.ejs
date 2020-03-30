@@ -1,0 +1,48 @@
+<% include header %>
+<% include menu %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12"> 
+        <% include menuleft %>
+  </div>
+   <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12"> 
+    <div class="panel panel-info">
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12"> 
+        <div class="panel-heading">
+          <h3 class="panel-title" style="color: rgb(221, 51, 9);font-weight: bold;">Quản lý người dùng</h3>
+        </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12"> 
+        <h5><a href="/logout">Đăng Xuất</a></h5>
+        </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center"> 
+				<img alt="User Pic" src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/p720x720/86708021_1453150244846809_2193686805931360256_o.jpg?_nc_cat=109&_nc_sid=13bebb&_nc_ohc=7t0gvYcpGCMAX8Vzrd7&_nc_ht=scontent-sin6-2.xx&_nc_tp=6&oh=db3219ff7def3cbca5d02a219098f172&oe=5E9B5379" class="img-circle img-responsive"> </div>
+            <div class=" col-md-9 col-lg-9 "> 
+                    <div class="well">
+                        <h3><span class="fa fa-user"></span><%=user.username%></h3>
+                        <p>
+                            <strong>id</strong>: <%= user._id %><br>
+                            <strong>email</strong>: <%= user.email %><br>
+                            <strong>address</strong>: <%= user.address %></br>
+
+                            <strong>phone</strong>: <%= user.phone %>
+                        </p>
+                     
+                        <a href="edit/<%= user._id%>">Cập nhật</a>
+                        <a href="delete/<%= user._id%>" style="padding-left: 50px;">Xóa</a>
+            </div>
+          </div>
+        </div>
+	</div>
+   </div>
+   <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12"> 
+  </div>
+  </div>
+</div>
+</div>
+
+<% include footer %>
